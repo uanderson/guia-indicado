@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="admin" extends="layout.admin">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/home/home.jsp" />
+    <put-attribute name="renderizarBarraLateral" value="false" />
+  </definition>
+  
+  <definition name="admin/empresas" extends="layout.admin.lista">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/empresa/lista.jsp" />
+  </definition>
+  
+  <definition name="admin/empresas/cadastro" extends="layout.admin">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/empresa/cadastro.jsp" />
+    <put-attribute name="moduloJs" value="empresa/cadastro" />
+  </definition>
+  
+  <definition name="admin/empresas/imagens" extends="layout.admin">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/empresa/imagem.jsp" />
+    <put-attribute name="moduloJs" value="empresa/imagem" />
+  </definition>
+  
+  <definition name="admin/destaques/cadastro" extends="layout.admin">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/destaque/cadastro.jsp" />
+    <put-attribute name="moduloJs" value="destaque/cadastro" />
+  </definition>
+  
+  <definition name="admin/destaques" extends="layout.admin">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/destaque/lista.jsp" />
+    <put-attribute name="renderizarBarraLateral" value="false" />
+  </definition>
+  
+  <definition name="admin/anunciantes" extends="layout.admin.lista">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/anunciante/lista.jsp" />
+  </definition>
+  
+  <definition name="admin/anunciantes/cadastro" extends="layout.admin">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/anunciante/cadastro.jsp" />
+    <put-attribute name="moduloJs" value="anunciante/cadastro" />
+  </definition>
+  
+  <definition name="admin/banners" extends="layout.admin.lista">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/banner/lista.jsp" />
+  </definition>
+  
+  <definition name="admin/banners/cadastro" extends="layout.admin">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/banner/cadastro.jsp" />
+    <put-attribute name="moduloJs" value="banner/cadastro" />
+  </definition>
+  
+  <definition name="admin/indices" extends="layout.admin">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/admin/indice/indice.jsp" />
+    <put-attribute name="renderizarBarraLateral" value="false" />
+  </definition>
+  
+  <definition name="admin/login" template="/WEB-INF/ui/admin/login.jsp" />
+</tiles-definitions>

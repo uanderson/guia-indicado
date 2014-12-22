@@ -1,0 +1,271 @@
+/************************************************
+ # Site #########################################
+ ************************************************/
+
+.container.primario {
+  margin-top: 60px;
+}
+
+table tr.centro,
+table td.centro {
+  text-align: center;
+}
+
+table tr.nowrap,
+table td.nowrap {
+  white-space: nowrap; 
+}
+
+table th.mini,
+table td.mini {
+  width: 1px;
+}
+
+.msg-erro {
+  display: block;
+  margin-bottom: 10px;
+  color: #b94a48;
+}
+
+.msg-erro.esconder {
+  display: none;
+}
+
+.erro {
+  border-color: #d3a2a2 !important;
+}
+
+.row-fluid.margin {
+  margin-top: 20px;
+}
+
+.noverflow {
+  overflow: hidden;
+}
+
+/************************************************
+ # Alertas ######################################
+ ************************************************/
+
+.alerta {
+  position: fixed;
+  top: 15px;
+  left: 0;
+  right: 0;
+  z-index: 7000;
+}
+
+  .alerta .mensagem {
+    position: relative;
+    width: 500px;
+    padding: 10px 12px;
+    margin: 0 auto;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+    background: #5481c2;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+       -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+  }
+
+    .alerta .mensagem .dispensar {
+      position: absolute;
+      top: 6px;
+      right: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-top: 0;
+      text-decoration: none;
+      opacity: 0.5;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    }
+  
+    .alerta .mensagem .dispensar:hover {
+      opacity: 1;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    }
+  
+  .alerta .texto-mensagem {
+    display: block;
+    margin-right: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+  }
+ 
+/************************************************
+ # Container intitulado #########################
+ ************************************************/
+
+.block {
+  padding-bottom: 5px;
+  margin-bottom: 18px;
+  background: #fff url(../img/bnd.gif) bottom center repeat-x;
+}
+
+  .block .bendl {
+    width: 5px;
+    height: 5px;
+    background: url(../img/bendl.gif) bottom left no-repeat;
+    float: left
+  }
+  
+  .block .bendr {
+    width: 5px;
+    height: 5px;
+    background: url(../img/bendr.gif) bottom left no-repeat;
+    float: right
+  }
+  
+  .block .block-head {
+    height: 54px;
+    line-height: 54px;
+    background: url(../img/bhead.gif) 0 0 repeat-x;
+    overflow: hidden
+  }
+
+    .block .block-head .bheadl {
+      width: 20px;
+      height: 54px;
+      float: left;
+      background: url(../img/bheadl.gif) top left no-repeat;
+    }
+    
+    .block .block-head .bheadr {
+      width: 20px;
+      height: 54px;
+      float: right;
+      background: url(../img/bheadr.gif) top right no-repeat;
+    }
+
+      .block .block-head h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #555;
+        text-shadow: 1px 1px 0 #fff;
+        float: left;
+        line-height: 54px;
+      }
+
+  .block .block-content {
+    overflow: hidden;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 10px 20px 0;
+  }
+
+/*
+ -- Login
+ */
+.login-container {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+  .login-container .footer {
+  	text-align: center;
+  }
+
+  .login-container .block.small.login {
+  	width: 400px;
+  	margin-top: 30px;
+  	margin-bottom: 18px;
+  	padding-bottom: 5px;
+  }
+
+  .login-container .block.small.center {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .login-container .block.small {
+  	width: 49%;
+  	padding-bottom: 0;
+  }
+
+  .login-container .block {
+  	padding-bottom: 5px;
+  	margin-bottom: 18px;
+  }
+
+/************************************************
+ # JQuery UI ####################################
+ ************************************************/
+
+/*
+ -- Base
+ */
+.ui-widget-content {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #444444;
+}
+
+.ui-widget-content .ui-state-hover,
+.ui-widget-content .ui-state-focus {
+  background: #5481c2;
+  color: #ffffff;
+}
+
+.ui-corner-all {
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+      border-radius: 4px;
+}
+
+/*
+ -- Autocomplete
+ */
+.ui-autocomplete {
+  position: absolute;
+  cursor: default;
+}
+
+.ui-autocomplete-loading {
+  background: #ffffff url(../img/carregando-autocomplete.gif) right center no-repeat;
+}
+
+/*
+ -- Menu
+ */
+.ui-menu {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+  display: block;
+}
+
+.ui-menu .ui-menu {
+  margin-top: -3px;
+}
+
+.ui-menu .ui-menu-item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.ui-menu .ui-menu-item a {
+  text-decoration: none;
+  display: block;
+  padding: .2em .4em;
+  line-height: 1.5;
+}
+
+.ui-menu
+.ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+  margin: -1px;
+}
+
+.ui-helper-hidden-accessible {
+  position: absolute; 
+  left: -99999999px; 
+  top: -99999999px;
+} 

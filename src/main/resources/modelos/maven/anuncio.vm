@@ -1,0 +1,117 @@
+<table width="100%" align="center" cellpadding="0" cellspacing="0" style="border: 1px solid #dddddd">
+  <tbody>
+    <tr>
+      <td height="60" bgcolor="#E8E8E8" align="center">
+        <table width="95%">
+          <tbody>
+            <tr>
+              <td align="left" valign="middle">
+                <span style="font-size: 30px">${finalName}</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="#F8F8F8" align="center">
+        <table width="95%" cellpadding="20">
+          <tbody>
+            <tr>
+              <td align="left">
+              	<font face="Lucida Grande, Segoe UI, Arial, Verdana, Lucida Sans Unicode, Tahoma, Sans Serif">
+                  <h3>Notas da Versão</h3>
+                  <hr/>       
+                  
+                  #if ($release.getActions('add').size() !=0)
+					<h4>Adicionado</h4>
+					#foreach($actionItem in $release.getActions('add'))
+					#set($action=$actionItem.getAction())
+					#if ($actionItem.getIssue())
+					#set($issue=$actionItem.getIssue())
+					#else
+					#set($issue="")
+					#end
+					#if ($actionItem.getDueTo())
+					#set($dueto=$actionItem.getDueTo())
+					#else
+					#set($dueto="")
+					#end
+					<li>${action} #if($!issue != "") Ocorrência: $issue. #end#if($!dueto != "")Obrigado a $dueto. #end</li>
+					#set($issue="")
+					#set($dueto="")
+					#end 
+				  #end
+				  
+				  #if ($release.getActions('fix').size() !=0)
+					<h4>Corrigido</h4>
+					#foreach($actionItem in $release.getActions('fix'))
+					#set($action=$actionItem.getAction())
+					#if ($actionItem.getIssue())
+					#set($issue=$actionItem.getIssue())
+					#else
+					#set($issue="")
+					#end
+					#if ($actionItem.getDueTo())
+					#set($dueto=$actionItem.getDueTo())
+					#else
+					#set($dueto="")
+					#end
+					<li>${action} #if($!issue != "") Ocorrência: $issue. #end#if($!dueto != "")Obrigado a $dueto. #end</li>
+					#set($issue="")
+					#set($dueto="")
+					#end 
+				  #end
+				  
+				  #if ($release.getActions('update').size() !=0)
+					<h4>Alterado</h4>
+					#foreach($actionItem in $release.getActions('update'))
+					#set($action=$actionItem.getAction())
+					#if ($actionItem.getIssue())
+					#set($issue=$actionItem.getIssue())
+					#else
+					#set($issue="")
+					#end
+					#if ($actionItem.getDueTo())
+					#set($dueto=$actionItem.getDueTo())
+					#else
+					#set($dueto="")
+					#end
+					<li>${action} #if($!issue != "") Ocorrência: $issue. #end#if($!dueto != "")Obrigado a $dueto. #end</li>
+					#set($issue="")
+					#set($dueto="")
+					#end 
+				  #end
+				  
+				  #if ($release.getActions('remove').size() !=0)
+					<h4>Removido</h4>
+					#foreach($actionItem in $release.getActions('remove'))
+					#set($action=$actionItem.getAction())
+					#if ($actionItem.getIssue())
+					#set($issue=$actionItem.getIssue())
+					#else
+					#set($issue="")
+					#end
+					#if ($actionItem.getDueTo())
+					#set($dueto=$actionItem.getDueTo())
+					#else
+					#set($dueto="")
+					#end
+					<li>${action} #if($!issue != "") Ocorrência: $issue. #end#if($!dueto != "")Obrigado a $dueto. #end</li>
+					#set($issue="")
+					#set($dueto="")
+					#end 
+				  #end
+				  
+                  <br><br>
+                  -- <br>
+				  Notificador feliz!
+              	</font>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>

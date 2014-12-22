@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="layout.site" template="/WEB-INF/ui/site/layout/site.jsp">
+    <put-attribute name="navegacao" value="/WEB-INF/ui/site/layout/navegacao.jsp" />
+    <put-attribute name="cabecalho" value="/WEB-INF/ui/site/layout/cabecalho.jsp" />
+    <put-attribute name="rodape" value="/WEB-INF/ui/site/layout/rodape.jsp" />
+    <put-attribute name="renderizarBusca" value="true" cascade="true" />
+  </definition>
+  
+  <definition name="layout.admin" template="/WEB-INF/ui/admin/layout/admin.jsp">
+    <put-attribute name="navegacao" value="/WEB-INF/ui/admin/layout/navegacao.jsp" />
+    <put-attribute name="renderizarBarraLateral" value="true" />
+  </definition>
+  
+  <definition name="layout.admin.lista" template="/WEB-INF/ui/admin/layout/admin.jsp">
+    <put-attribute name="navegacao" value="/WEB-INF/ui/admin/layout/navegacao.jsp" />
+    <put-attribute name="rodape" value="/WEB-INF/ui/admin/layout/rodape.jsp" />
+    <put-attribute name="renderizarBarraLateral" value="false" />
+  </definition>
+
+</tiles-definitions>

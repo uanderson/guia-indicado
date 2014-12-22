@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+    
+  <description>Funçoes Guia Indicado</description>
+  <display-name>Funções Guia Indicado</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>gn</short-name>
+  <uri>http://guiaindicado.com/jsp/jstl/funcoes</uri>
+
+  <function>
+    <description>
+      Formata a string passada para o formato de CEP
+    </description>
+    <name>formatarCep</name>
+    <function-class>com.guiaindicado.ui.formatacao.Funcoes</function-class>
+    <function-signature>java.lang.String formatarCep(java.lang.String)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Formata a string passada para o formato de Telefone
+    </description>
+    <name>formatarTelefone</name>
+    <function-class>com.guiaindicado.ui.formatacao.Funcoes</function-class>
+    <function-signature>java.lang.String formatarTelefone(java.lang.String)</function-signature>
+  </function>
+  
+  <function>
+    <description>
+      Formata a string passada para o formato Cidade (Estado)
+    </description>
+    <name>formatarCidade</name>
+    <function-class>com.guiaindicado.ui.formatacao.Funcoes</function-class>
+    <function-signature>java.lang.String formatarCidade(java.lang.String,java.lang.String)</function-signature>
+  </function>
+</taglib>

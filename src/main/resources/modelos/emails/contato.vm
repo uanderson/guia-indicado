@@ -1,0 +1,24 @@
+<div style="border: 1px solid #dddddf;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;">
+  <div style="padding:14px;margin-bottom:4px;background-color:#e9e9eb;-webkit-border-top-left-radius: 4px;-webkit-border-top-right-radius: 4px;-moz-border-radius-topleft: 4px;-moz-border-radius-topright: 4px;border-top-left-radius: 4px;border-top-right-radius: 4px;border-bottom: 1px solid #dddddf;">
+    <a style=" color:#ffffff" href="http://guiaindicado.com">
+      <img alt="Guia Indicado" src="http://dl.dropbox.com/u/79574376/logo-email.png" style="display:block;border: 0;" />
+    </a>
+  </div>
+  <div style="font-family: Arial, Helvetica, sans-serif;font-size: 13px; margin: 14px;position: relative">
+    <h2 style="font-family: Arial, Helvetica, sans-serif;margin: 0 0 16px;font-size: 18px;font-weight: normal">
+      Contato de $nome.
+    </h2>
+    <p>
+      <span style="display: block; line-height: 1.35em;"><strong>E-mail:</strong> <a href="mailto:$email">$email</a></span>
+      <span style="display: block; line-height: 1.35em;"><strong>Telefone:</strong> $telefone</span>
+      <span style="display: block; line-height: 1.35em;"><strong>Mensagem: </strong></span>
+    </p>
+    <p>$mensagem</p>
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 13px;line-height: 18px;border-bottom: 1px solid #e9e9eb;padding-bottom: 10px;margin: 0 0 10px;">
+      <span style="font-weight: bold; font-style: italic;">Suporte Guia Indicado</span>
+    </p>
+    <p style="font-family: Arial, Helvetica, sans-serif; margin-top: 5px; font-size: 10px; color: #888888;">
+      Por favor não responda a essa mensagem, ela foi enviada de um endereço de e-mail não monitorado.
+    </p>
+  </div>
+</div>

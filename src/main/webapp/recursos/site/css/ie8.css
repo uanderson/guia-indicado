@@ -1,0 +1,16 @@
+/**************************** 
+ # Geral ####################
+ ****************************/
+
+nav #navMenu li {
+  line-height: 20px;
+}
+
+
+.busca .cidade .lista {
+  border: 1px solid #0e0927;
+}
+
+.listagem .descricao {
+  width: 380px;  
+}

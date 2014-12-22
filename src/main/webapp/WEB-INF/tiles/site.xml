@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="home" extends="layout.site">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/site/home/home.jsp" />
+    <put-attribute name="moduloJs" value="home" />
+  </definition>
+  
+  <definition name="busca/resultado" extends="layout.site">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/site/busca/resultado.jsp" />
+    <put-attribute name="moduloJs" value="resultadoBusca" />
+  </definition>
+  
+  <definition name="detalhe" extends="layout.site">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/site/busca/detalhe.jsp" />
+    <put-attribute name="moduloJs" value="detalhe" />
+  </definition>
+  
+  <definition name="empresa/indicacao" extends="layout.site">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/site/empresa/indicacao.jsp" />
+    <put-attribute name="renderizarBusca" value="false" cascade="true" />
+    <put-attribute name="moduloJs" value="empresa/indicacao" />
+  </definition>
+
+  <definition name="login" extends="layout.site">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/site/login.jsp" />
+    <put-attribute name="renderizarBusca" value="false" cascade="true" />
+  </definition>
+  
+  <definition name="cadastro" extends="layout.site">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/site/usuario/cadastro.jsp" />
+    <put-attribute name="renderizarBusca" value="false" cascade="true" />
+    <put-attribute name="moduloJs" value="cadastro" />
+  </definition>
+  
+  <definition name="usuario/alteracao" extends="layout.site">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/site/usuario/alteracao.jsp" />
+    <put-attribute name="renderizarBusca" value="false" cascade="true" />
+    <put-attribute name="moduloJs" value="usuario/alteracao" />
+  </definition>
+  
+  <definition name="senha/esqueci/alteracao" extends="layout.site">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/site/usuario/novaSenha.jsp" />
+    <put-attribute name="renderizarBusca" value="false" cascade="true" />
+  </definition>
+  
+  <definition name="contato" template="/WEB-INF/ui/site/contato/contato.jsp" />
+  <definition name="empresa" template="/WEB-INF/ui/site/informativo/sobreEmpresa.jsp" />
+  <definition name="termo" template="/WEB-INF/ui/site/informativo/termosUso.jsp" />
+  <definition name="senha/esqueci" template="/WEB-INF/ui/site/usuario/esqueciSenha.jsp" />
+  <definition name="senha/alteracao" template="/WEB-INF/ui/site/usuario/alteracaoSenha.jsp" />
+  
+  <!-- Erros -->
+  <definition name="404" extends="layout.site">
+    <put-attribute name="conteudo" value="/WEB-INF/ui/site/404.jsp" />
+  </definition>
+  
+  <!-- Comum -->
+  <definition name="barra/lateral/facebook" template="/WEB-INF/ui/site/barralateral/facebook.jsp" />
+  <definition name="barra/lateral/publicidade" template="/WEB-INF/ui/site/barralateral/publicidade.jsp" />
+  
+</tiles-definitions>
