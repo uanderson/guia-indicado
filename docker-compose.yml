@@ -1,9 +1,24 @@
-version: '2'
+version: '3'
 services:
   mysql:
     image: mysql:5.7
-    container_name: gi-mysql
+    container_name: gi_mysql
     ports:
         - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: 'a1b2c3d4f9'
+
+  solr:
+    image: solr:7.1
+    container_name: gi_solr
+    ports:
+        - 8983:8983
+    volumes:
+        - solr_data:/opt/solr/server/solr/gicores
+    entrypoint:
+        - docker-entrypoint.sh
+        - solr-precreate
+        - gicore
+
+volumes:
+  solr_data:
