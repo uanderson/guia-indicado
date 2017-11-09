@@ -1,29 +1,3 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+a Indicado main goal was provide to people a place where they could find things that normally aren’t easily found, like the best Umuarama raw coffee. 
+ 
+The portal was design to be collaborative, so people could inform places, products or services and the community could moderate the data informed. Also, people could rate every place, product or service, leading the community to provide better products and services.

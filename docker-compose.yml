@@ -9,7 +9,7 @@ services:
       MYSQL_ROOT_PASSWORD: 'a1b2c3d4f9'
 
   solr:
-    image: solr:7.1
+    image: solr:6.6.2
     container_name: gi_solr
     ports:
         - 8983:8983
